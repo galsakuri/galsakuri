@@ -27,7 +27,7 @@ Runs locally - no cloud required.
 ### CTI - Cyber Threat Intelligence Pipeline
 *(built to support SOC work)*
 
-Monitors Telegram threat-intel channels, classifies messages against
+Monitors open-source threat-intel channels, classifies messages against
 YAML rules, and uses Gemini AI to filter for active in-the-wild
 exploitation only. Sends HTML email reports with defanged IOCs and a
 CSV attachment for ingestion.

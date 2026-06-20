@@ -6,33 +6,31 @@
 
 ## About
 
-I work in security operations - alert investigation, incident response,
-and detection engineering across Splunk and CrowdStrike. Outside of
-work I build tools, mostly Python, mostly security-related.
+Security analyst by day, but most of what I build sits closer to
+infrastructure — containerized services, CI/CD pipelines, secret
+management, and automation. Mostly Python, usually with a security angle.
 
 ---
 
-## Security Projects
-
-### [HomeSOC](https://github.com/galsakuri/HomeSOC)
-Agent-based home Security Operations Center for macOS. A local agent
-collects security events (process executions, network connections, auth
-attempts, privilege escalations) and streams them to a FastAPI backend
-that runs a YAML detection rule engine. A React/TypeScript dashboard
-shows a live event feed, agent management, and per-agent rule config.
-Runs locally - no cloud required.
-
-`Python · FastAPI · React · TypeScript · SQLite · Docker Compose · GitHub Actions`
+## Projects
 
 ### CTI - Cyber Threat Intelligence Pipeline
 *(built to support SOC work)*
 
-Monitors open-source threat-intel channels, classifies messages against
-YAML rules, and uses Gemini AI to filter for active in-the-wild
-exploitation only. Sends HTML email reports with defanged IOCs and a
-CSV attachment for ingestion.
+Production pipeline, deployed and running 24/7. CI/CD on GitHub Actions
+with a self-hosted runner (build, deploy, health-check on every push to
+master) and CodeQL SAST in the pipeline. Hardened, non-root Docker image
+under Compose, secrets in GCP Secret Manager with keyless service-account
+auth. Failure-durable Python pipeline with a retry queue and a host-side
+watchdog for container health, resource, and auth monitoring.
+`Python · Docker · GitHub Actions · CodeQL · GCP Secret Manager · Vertex AI`
 
-`Python · Gemini AI · Docker · HashiCorp Vault · Gmail OAuth`
+### [HomeSOC](https://github.com/galsakuri/HomeSOC)
+Agent-based security monitoring platform for macOS. A local agent collects
+security events and streams them to a FastAPI backend running a YAML
+detection rule engine; a React/TypeScript dashboard shows a live feed and
+per-agent config. Multi-service, Docker Compose, one-command bring-up.
+`Python · FastAPI · React · TypeScript · SQLite · Docker Compose · GitHub Actions`
 
 ---
 
@@ -53,11 +51,13 @@ CSV attachment for ingestion.
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white"/>
   <img src="https://img.shields.io/badge/SQL-003B57?logo=sqlite&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Splunk-000000?logo=splunk&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GCP-4285F4?logo=googlecloud&logoColor=white"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black"/>
   <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Splunk-000000?logo=splunk&logoColor=white"/>
 </p>
 
 ---

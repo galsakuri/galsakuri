@@ -1,6 +1,6 @@
 # Hi, I'm Gal
 
-**SOC Tier 2 Analyst · B.Sc. Computer Science, Holon Institute of Technology**
+**Cyber Security Analyst · B.Sc. Computer Science, Holon Institute of Technology**
 
 ---
 

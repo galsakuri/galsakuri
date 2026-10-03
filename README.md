@@ -1,13 +1,13 @@
 # Hi, I'm Gal
 
-**SOC Tier 2 Analyst · CS Student @ Holon Institute of Technology**
+**SOC Tier 2 Analyst · B.Sc. Computer Science, Holon Institute of Technology**
 
 ---
 
 ## About
 
 Security analyst by day, but most of what I build sits closer to
-infrastructure — containerized services, CI/CD pipelines, secret
+infrastructure: containerized services, CI/CD pipelines, secret
 management, and automation. Mostly Python, usually with a security angle.
 
 ---
@@ -19,9 +19,9 @@ management, and automation. Mostly Python, usually with a security angle.
 
 Production pipeline, deployed and running 24/7. CI/CD on GitHub Actions
 with a self-hosted runner (build, deploy, health-check on every push to
-master) and CodeQL SAST in the pipeline. Hardened, non-root Docker image
-under Compose, secrets in GCP Secret Manager with keyless service-account
-auth. Failure-durable Python pipeline with a retry queue and a host-side
+master) and CodeQL SAST in the pipeline. Docker image under Compose,
+secrets in GCP Secret Manager with keyless service-account auth.
+Failure-durable Python pipeline with a retry queue and a host-side
 watchdog for container health, resource, and auth monitoring.
 `Python · Docker · GitHub Actions · CodeQL · GCP Secret Manager · Vertex AI`
 
@@ -49,7 +49,7 @@ per-agent config. Multi-service, Docker Compose, one-command bring-up.
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white"/>
   <img src="https://img.shields.io/badge/C-00599C?logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/SQL-003B57?logo=sqlite&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?logo=githubactions&logoColor=white"/>
   <img src="https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white"/>
